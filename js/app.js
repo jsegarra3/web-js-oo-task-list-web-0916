@@ -1,8 +1,8 @@
 // Initialize
 
 $(function() { // on document ready
-  listController = new ListsController();
-  listController.init();
-  tasksController = new TasksController();
-  tasksController.init();
+  $('#add_list').on('submit', function(){
+    event.preventDefault();
+    ListsController();
+  });
 });
